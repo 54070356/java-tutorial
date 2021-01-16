@@ -1,0 +1,3 @@
+grant codeBase "file:/SCRIPT_SOURCE/*"{
+   permission java.io.FilePermission "*", "read";
+};

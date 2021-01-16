@@ -1,0 +1,13 @@
+server:
+  port: 10001
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: service1
+        instance-id: service1-instance1
+        prefer-ip-address: true
+        health-check-url: http://${NODE_IP:localhost}:${server.port}/actuator/health
+        health-check-interval: ${HEALTH_CHECK_INTERVAL:10s}

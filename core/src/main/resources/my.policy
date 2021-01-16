@@ -1,0 +1,3 @@
+grant codeBase "/Users/lx/github/java-tutorials/java-core/./myplugin/*"{
+   permission java.io.FilePermission "*", "read";
+};
